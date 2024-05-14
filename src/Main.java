@@ -45,7 +45,7 @@ public class Main {
             thread.join(); // ждём когда поток завершится
         }
 
-        long endTs = System.currentTimeMillis();
+        long endTs = System.currentTimeMillis(); // end time
         System.out.println("Time: " + (endTs - startTs) + " ms");
     }
 
