@@ -42,10 +42,10 @@ public class Main {
         }
 
         for (Thread thread : threads) {
-            thread.join(); // зависаем, ждём когда поток объект которого лежит в thread завершится
+            thread.join(); // ждём когда поток завершится
         }
 
-        long endTs = System.currentTimeMillis(); // end time
+        long endTs = System.currentTimeMillis();
         System.out.println("Time: " + (endTs - startTs) + " ms");
     }
 
